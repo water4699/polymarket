@@ -3,7 +3,7 @@
 包含数据库配置、API密钥、全局参数等
 """
 import os
-from typing import Dict, Any
+from typing import Dict, Any, List
 from pydantic import BaseSettings, Field
 from dotenv import load_dotenv
 
@@ -45,6 +45,10 @@ class APIConfig(BaseSettings):
     # Dune Analytics
     DUNE_API_KEY: str = Field(default="", env="DUNE_API_KEY")
     DUNE_BASE_URL: str = Field(default="https://api.dune.com", env="DUNE_BASE_URL")
+
+    # Polygon Etherscan API V2 (现在从数据库 etherscan_accounts 表读取)
+    POLYGON_CHAIN_ID: int = Field(default=137, env="POLYGON_CHAIN_ID")
+    POLYGONSCAN_V2_BASE_URL: str = Field(default="https://api.etherscan.io/v2/api", env="POLYGONSCAN_V2_BASE_URL")
 
     # 区块链节点 - 使用可靠的公共RPC
     WEB3_PROVIDER_URL: str = Field(default="https://polygon-mainnet.public.blastapi.io", env="WEB3_PROVIDER_URL")

@@ -1,0 +1,70 @@
+# PredictLab 环境变量配置示例
+# 复制此文件为 .env 并填入真实的API Keys
+
+# ===========================================
+# API 配置
+# ===========================================
+
+# Polygon Etherscan API V2 Keys (必需)
+# 从 https://polygonscan.com/apis 获取免费的API Key
+# 支持多个Key用逗号分隔，实现自动轮询
+POLYGONSCAN_API_KEYS=["YOUR_POLYGONSCAN_API_KEY_1", "YOUR_POLYGONSCAN_API_KEY_2"]
+
+# Polygon 链配置
+POLYGON_CHAIN_ID=137
+POLYGONSCAN_V2_BASE_URL=https://api.etherscan.io/v2/api
+
+# Predict API (可选)
+PREDICT_API_KEY=your_predict_api_key_here
+PREDICT_BASE_URL=https://api.predict.io
+
+# Polymarket API (可选)
+POLYMARKET_API_KEY=your_polymarket_api_key_here
+POLYMARKET_BASE_URL=https://api.polymarket.com
+
+# Dune Analytics API (可选)
+DUNE_API_KEY=your_dune_api_key_here
+DUNE_BASE_URL=https://api.dune.com
+
+# ===========================================
+# 数据库配置
+# ===========================================
+
+# PostgreSQL
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_DB=predictlab
+POSTGRES_USER=predictlab_user
+POSTGRES_PASSWORD=your_postgres_password
+
+# MongoDB
+MONGODB_HOST=localhost
+MONGODB_PORT=27017
+MONGODB_DB=predictlab
+MONGODB_USER=
+MONGODB_PASSWORD=
+
+# ===========================================
+# 应用配置
+# ===========================================
+
+# 日志
+LOG_LEVEL=INFO
+LOG_FILE=logs/predictlab.log
+
+# 数据处理
+BATCH_SIZE=1000
+MAX_WORKERS=4
+
+# 回测配置
+INITIAL_CAPITAL=10000.0
+COMMISSION=0.001
+
+# 时间配置
+TIMEZONE=UTC
+DATA_RETENTION_DAYS=365
+
+# ===========================================
+# Web3 配置
+# ===========================================
+WEB3_PROVIDER_URL=https://polygon-mainnet.public.blastapi.io
