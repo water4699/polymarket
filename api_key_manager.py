@@ -125,8 +125,8 @@ class APIKeyManager:
                 self.current_index = (self.current_index + 1) % len(self.api_keys)
                 checked_count += 1
 
-        logger.error("所有API Keys都达到每日限额")
-        return None
+            logger.error("所有API Keys都达到每日限额")
+            return None
 
     def _is_key_available(self, api_key: str) -> bool:
         """检查API Key是否可用"""

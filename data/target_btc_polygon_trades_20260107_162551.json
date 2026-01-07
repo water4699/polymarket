@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "market_id": "1119660",
+    "market_question": "Bitcoin Up or Down - January 7, 12:30AM-12:45AM ET",
+    "market_slug": "btc-updown-15m-1767763800",
+    "condition_id": "0x2ced93f625a122d76f5908d88178fb489f0cb354c9880af9f7ce0f4835e7329d",
+    "clob_token_ids": "[\"94884115173528322551950112620566102454027212197034243144478693436362205492093\", \"102268507963616987305224280525915065897719601713817370116000028334410470411618\"]",
+    "time_range": {
+      "start": "2026-01-06T04:31:48.500202+00:00",
+      "end": "2026-01-08T05:45:00+00:00"
+    },
+    "fetch_timestamp": "2026-01-07T16:25:51.159664",
+    "data_sources": [
+      "erc1155_transfers",
+      "erc20_transfers",
+      "contract_calls"
+    ]
+  },
+  "erc1155_transfers": [],
+  "erc20_transfers": [],
+  "contract_calls": []
+}
